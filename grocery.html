@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OneDistrict Grocery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="cart.html" class="cart-box">
+🛒 Cart : <span id="cart">0</span><br>
+💰 Total : <span id="total">₹0</span>
+</a>
+
+<header>
+<div class="logo">OneDistrict</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="grocery.html">Grocery</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>🛒 Grocery Store</h1>
+<p>Order daily essentials easily.</p>
+</section>
+
+<section class="services">
+
+<div class="card">
+    <img src="images/rice.png">
+    <h3>Rice</h3>
+    <p>₹55 / Kg</p>
+
+    <button onclick="addToCart('Rice',55,'images/rice.png')">
+        Add to Cart
+    </button>
+</div>
+
+<div class="card">
+    <img src="images/milk.png">
+    <h3>Milk</h3>
+    <p>₹60</p>
+
+    <button onclick="addToCart('Milk',60,'images/milk.png')">
+        Add to Cart
+    </button>
+</div>
+
+<div class="card">
+    <img src="images/sugar.png">
+    <h3>Sugar</h3>
+    <p>₹45 / Kg</p>
+
+    <button onclick="addToCart('Sugar',45,'images/sugar.png')">
+        Add to Cart
+    </button>
+</div>
+
+<div class="card">
+    <img src="images/oil.png">
+    <h3>Cooking Oil</h3>
+    <p>₹160</p>
+
+    <button onclick="addToCart('Cooking Oil',160,'images/oil.png')">
+        Add to Cart
+    </button>
+</div>
+
+</section>
+
+<footer>
+© 2026 OneDistrict
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
